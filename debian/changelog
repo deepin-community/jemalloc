@@ -1,3 +1,9 @@
+jemalloc (5.3.0-2deepin1) unstable; urgency=medium
+
+  * feat: add sw64 support.
+
+ -- hudeng <hudeng@deepin.org>  Thu, 29 May 2025 17:20:01 +0800
+
 jemalloc (5.3.0-2) unstable; urgency=medium
 
   * Remove loongarch64 patch: it was unnecessary and rejected upstream, per

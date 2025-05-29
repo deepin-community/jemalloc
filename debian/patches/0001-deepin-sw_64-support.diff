@@ -1,0 +1,14 @@
+diff --git a/include/jemalloc/internal/quantum.h b/include/jemalloc/internal/quantum.h
+index c22d753..3fbef00 100644
+--- a/include/jemalloc/internal/quantum.h
++++ b/include/jemalloc/internal/quantum.h
+@@ -62,6 +62,9 @@
+ 	defined(__SH4_SINGLE_ONLY__))
+ #    define LG_QUANTUM		4
+ #  endif
++#  ifdef __sw_64__
++#    define LG_QUANTUM		4
++#  endif
+ #  ifdef __tile__
+ #    define LG_QUANTUM		4
+ #  endif
